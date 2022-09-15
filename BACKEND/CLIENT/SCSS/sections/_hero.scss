@@ -1,0 +1,120 @@
+@use "../customize" as *;
+
+
+// home hero
+body{
+    background-color: $gray-200 !important;
+}
+.hero-index{
+    margin-top: 5%;
+    .caption{
+            position: absolute;
+            right: 15%;
+            bottom: 1.25rem;
+            left: 15%;
+            top: 35%;
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bolder;
+            
+            
+    }
+    .slide2{
+        
+        top: 50%;
+        color: $blue !important;
+        font-weight: bolder;
+        font-size: 2rem;
+        font-family: cursive;
+    }
+}
+//home services
+.services{
+  
+    margin-top: 3% ;
+    .txt{
+        h2 {
+            color: $red !important;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+    
+    }
+    .col-4{
+        img{
+            
+               
+                padding-left:1px;
+                padding-right: 1px;
+        }
+    }
+    
+    
+} 
+//services hero
+.service-hero{
+    margin-top: 10%;
+    .coming{
+        position: relative;
+        margin-top: 20%;
+        margin-left: 20%;
+        h1{
+            font-family: cursive;
+            font-size: 3em;
+            color: $blue;
+        }
+        .calc{
+            text-decoration: none;
+            color: $blue;
+            font-size: 2em;
+            font-style: oblique;
+        }
+    }
+}
+// regester page
+.regester-hero{
+    position: relative;
+    .message{
+        font-family: cursive; 
+        position: relative;
+       
+       h6{
+        color: $red;
+        
+       }
+    }
+}
+
+// the hero of about page
+.hero-about{
+   
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    .history{
+        
+        margin-top: 40px;
+    }
+    h4{
+        color: $blue !important;
+    }
+    h5{
+        margin-top: 30px;
+        color: $blue !important;
+    }
+    
+    }
+
+    // blog hero
+    .blog-hero{
+        background-color: $gray-200 !important;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%; 
+        .header{
+            color: $blue;
+        }
+    }

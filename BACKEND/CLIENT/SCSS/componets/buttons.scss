@@ -1,0 +1,30 @@
+@use "../customize" as *;
+    // login button
+    .admin-hero{
+        
+        .home{
+            position: relative;
+             margin-top: 10px;
+             left: -80px;
+             font-size: 0.6em;
+             margin-bottom: 20px;
+        }
+
+    }
+   
+.regester-hero{
+    
+        .more{
+            width: 100px;
+         }
+}
+.button{
+    font-size: 1.2em;
+    font-family: cursive; 
+    width: 150px;
+}
+.button:hover{
+    background-color: $green !important;}
+    
+        
+    

@@ -1,0 +1,98 @@
+@use "../customize" as *;
+
+//navbar
+
+.menu{
+    // background-color: $secondary;
+    color: $primary;
+    font-family: cursive;
+    font-size: 1.2rem;        
+    font-weight: bolder;
+   
+     .container-fluid{
+        .logo-title{
+            margin-left: 7%;
+            font-size: 1.2em;
+            color:$blue ;
+             
+       .sub-logo{
+           position: absolute;
+           color: $red;
+           font-size: .7em;
+             top: 30px;
+      
+   
+       }
+            
+        }
+        #logIn{
+            font-size: .9em;
+            // position: absolute;
+            margin-top: 5px;
+            padding-top: 10px;
+          
+            border: 0.5rem solid rgba($white,0.9);
+           
+        }
+     }
+    
+    .navbar-links{
+       .navbar-links:hover{
+        background-color: $blue;
+       }
+        margin-top: 0px;
+         .navbar-nav{
+          margin-left: 80px;
+          
+           
+        }
+     .nav-link{
+               
+                padding: 20px 30px 0 0;
+                
+            }
+        }
+    }   
+
+
+    // footer
+footer{
+    background-color: $secondary;
+    color: $primary;
+    margin-top: 5%;
+    img{
+        width: 10%;
+        height: 10%;
+        border-radius: 20px;
+    }
+    .footer{
+        display: inline-flex;
+        margin-left: 0%;
+        margin-top: 30px;
+        
+    }
+    .first-col{
+    
+    width: 80%;
+    margin-left: 10%;
+    a
+    {
+        text-decoration: none;
+        margin-left: 20px;
+     }
+    
+    }
+    .cell
+    {
+        margin-left: 30px;
+    }
+  .developers
+  {
+    padding-bottom: 20px;
+    margin-left: 30%;
+  }
+   
+   .right-column{
+    margin-left: 200px;
+   }
+}
