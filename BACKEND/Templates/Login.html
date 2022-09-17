@@ -1,9 +1,17 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {%load static%} {% block content %}
 <section class="admin-hero">
   <div class="container-form">
     <div class="img shadow-lg">
-      <img src="../imagies/pic4.jpg" class="img-fluid" alt="" />
-      <img src="../imagies/pic3.jpg" class="img-fluid img02" alt="" />
+      <img
+        src="{% static '../static/imagies/pic4.jpg'%}"
+        class="img-fluid"
+        alt=""
+      />
+      <img
+        src="{% static '../static/imagies/pic3.jpg' %}"
+        class="img-fluid img02"
+        alt=""
+      />
     </div>
     <form id="form-id" class="shadow-lg" name="form">
       <div class="mb-3 form">
@@ -45,7 +53,7 @@
           >Remember me next time</label
         >
         <div class="new-account">
-          <a href="../html.pages/regester.html">Create New Account</a>
+          <a href="Regestration">Create New Account</a>
         </div>
       </div>
       <div class="text-center">
@@ -55,6 +63,6 @@
       </div>
     </form>
   </div>
-  <script src="../JS/admin.js"></script>
+  <script src="{% static '../static/JS/admin.js'%}"></script>
 </section>
 {% endblock content %}

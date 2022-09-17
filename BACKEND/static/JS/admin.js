@@ -7,8 +7,7 @@
      input = document.getElementsByClassName('input')
  ;
  
-
- time.innerHTML = new Date().getFullYear();
+console.log(input)
 for(error of error){
   error.style.display = 'none' ;
 }

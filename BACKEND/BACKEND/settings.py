@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'home',
     'services',
     'blog',
-    'accounts',
+    'administration',
     'company_portal',
     # default app
     'django.contrib.admin',

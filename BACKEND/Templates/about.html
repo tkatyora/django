@@ -1,55 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="../style/css/style.css"
-    />
-    <title>TnC Telecommunication | About us</title>
-  </head>
-  <body>
-    <!-- the navbar -->
-    <nav
-      class="navbar navbar-expand-sm navbar-light shadow p-3 mb-5 bg-body rounded fixed-top menu"
-    >
-      <div class="container-fluid">
-        <a href="../html-pages/index.html" class="navbar-brand logo-title">
-          TnC <span class="sub-logo">Telecommunication</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse position-absolute top-0 start-50 translate-middle-x navbar-links"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link" href="../html.pages/index.html">Home</a>
-            <a class="nav-link" href="../html.pages/service.html">Services</a>
-            <a class="nav-link" href="../html.pages/projetcts.html">Projects</a>
-            <a class="nav-link" href="../html.pages/blog.html"
-              >Blog</a
-            >
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="../html.pages/aboutus.html"
-              >About us</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
+{% extends 'base.html' %}
+{%block content%}
+{%load static%}
     <section class="hero-about">
       <!-- making slides -->
       <h1>OVERVIEW</h1>
@@ -152,44 +103,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  <footer>
-    <div class="footer text-start">
-      <div class="first-col">
-        <h3>Follow Us</h3>
-        <p>
-          <a href="https://www.instagram.com/"
-            ><img src="B:\TNC\imagies\instagram.webp" alt="" />Instagram
-          </a>
-        </p>
-        <p>
-          <a href="https://twitter.com/home"
-            ><img src="B:\TNC\imagies\Twitter.png" alt="" /> Twitter
-          </a>
-        </p>
-        <p>
-          <a href="https://www.facebook.com/"
-            ><img src="B:\TNC\imagies\download.png" alt="" /> Facebook
-          </a>
-        </p>
-      </div>
-      <div class="mid-column">
-        <h3>Contact Us</h3>
-        <p>email:tnctelecomms@gmail.com</p>
-        <p>cell :0773735227</p>
-        <p class="cell">:0771145456</p>
-      </div>
-      <div class="right-column">
-        <h3>Adress</h3>
-        <p>
-          MUTARE <br />
-          HARARE
-        </p>
-      </div>
-    </div>
-    <hr />
-
-    <p class="developers">
-      Develped by Takudzwa katyora and Carey Mukozora @2022
-    </p>
-  </footer>
-</html>
+  {% endblock%}
+ 
