@@ -21,13 +21,13 @@ def home(request):
     
     
     
-    home =[service, projects,products]
-    context = {
-       'services_header' :'Web development' ,
-       'services_disc'   : ' We can Design your front end websites(staic) maintain the frontend websites' ,
-       'services_button' :'Services',
-       'home':home
-    }
+    # home =[service, projects,products]
+    # context = {
+    #    'services_header' :'Web development' ,
+    #    'services_disc'   : ' We can Design your front end websites(staic) maintain the frontend websites' ,
+    #    'services_button' :'Services',
+    #    'home':home
+    # }
    
     
     
