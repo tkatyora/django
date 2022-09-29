@@ -1,5 +1,5 @@
 @use '../customize' as *;
-
+ // The admin hero
 .admin-hero{
     .img{
         position:absolute;
@@ -31,7 +31,7 @@
         }
     }
 
-
+// the admin form
 form {
     width: 350px;
     position: relative;
@@ -46,14 +46,10 @@ form {
         width: 250px;
         
        
-        h2{
+        .login{
             color:$secondary;
-            font-family: cursive;
-            margin-left: 50px;
-            padding-top: 30px;
+            padding-top: 33px;
             font-size: 1.7em;
-
-           
         }
         p{
             position: absolute;
@@ -84,6 +80,7 @@ form {
     
 
 }
+// admin form
 #form-id{
     z-index: 2;
    
@@ -106,6 +103,9 @@ form {
     margin-top: -30px;
     cursor: pointer;
 }
+
+
+// regester code
 .regester-hero{
     margin-top: 7%;
 }

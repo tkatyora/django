@@ -2,10 +2,6 @@
 {% extends 'base.html' %}
 {%block content%}
 {%load static%}
-
-
-
-      <h1>color</h1>
     <section class="hero-index">
       <!-- making slides -->
       <div
@@ -92,21 +88,21 @@
         <h1 class=" p-4 text-center">PRODUCTS AND SERVICES</h1>
        
         <div class="row  g-5">
-          {%for item in home%}
+          {%for data in Homeservice%}
           <div class="col-4">
             <img src="{% static '../static/imagies/WEB.jpeg'%}" class="pic img-fluid" alt="">
             <div class="p-4 border  shadow bg-light">
               <div class="txt">
-                <h2>{{services_header}}</h2>
-                <p> {{services_disc}}
+                <h2>{{data}}</h2>
+                <p> {{data}}
                 </p class>
                 <p>Write your blog post</p>
                 <br />
-               <button type="button" class="btn btn-secondary home button">{{services_button}}</button>
+               <button type="button" class="btn btn-secondary home button">{{data}}</button>
               </div>
             </div>
           </div>
-          {%endfor%}
+          {%endfor %}
         </div>
         
       </div>
@@ -116,6 +112,6 @@
    
   </body>
   
-  <script src=" {% static '../static/JS/index.js'%}"></script>
+  <script src=" {% static '../static/JS/index.s'%}"></script>
 </html>
 {%endblock content%}

@@ -1,38 +1,46 @@
 from django.shortcuts import render
-from .models import HomeServices
+
 
 # Create your views here.
+class homeservices():
+    header:int
+    Discription:int 
+    Button:int
+    # def __init__(self, header:str , discriprition:str,button:str):
+    #     self.header = header
+    #     self.Discription = discriprition
+    #     self.Button = header
+
+services= homeservices()
+services.header = 'Web Development'
+services.Discription =  'We sell cool and nice products'
+services.Button = 'more services'
+
+# the produects
+products= homeservices()
+products.header = 'Products'
+products.Discription =  'We sell cool and nice products'
+products.Button = 'more products'
+
+#projects guides
+projects_guides= homeservices()
+projects_guides.header ='projects'
+projects_guides.Discription =  'we offer help in project planning and management'
+projects_guides.Button = 'projects'
+
+#projects guides
+Homeservices= [services.header,services.Discription,services.Button]
+print(type(Homeservices))
+for data in Homeservices:
+    print(data)
 def home(request):
-    context = {}
-    projects = HomeServices()
-    projects.header : 'Web Development'
-    projects.disc : ' We can Design your front end websites(staic) maintain the frontend websites' 
-    projects.button :'products'
     
-    products = HomeServices()
-    products.header : 'Web Developdment'
-    products.disc : ' We can Deesign your front end websites(staic) maintain the frontend websites' 
-    products.button :'projects'
-    
-    service = HomeServices()
-    service.header : 'Web Developdment'
-    service.disc : ' We can Deesign your front end websites(staic) maintain the frontend websites' 
-    service.button :'projects'
-    
-    
-    
-    # home =[service, projects,products]
-    # context = {
-    #    'services_header' :'Web development' ,
-    #    'services_disc'   : ' We can Design your front end websites(staic) maintain the frontend websites' ,
-    #    'services_button' :'Services',
-    #    'home':home
-    # }
-   
-    
-    
-   
-    return render(request , 'index.html' , context)
+    person = ['takdzwa','gracious','carey','nicole']
+    content ={}
+    content={
+        'Homeservice':Homeservices
+    }
+    return render(request , 'index.html' , content)
 
 def about(request):
     return render(request , 'about.html')

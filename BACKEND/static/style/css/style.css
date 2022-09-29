@@ -10833,7 +10833,7 @@ body {
 }
 
 .hero-index {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .hero-index .caption {
   position: absolute;
@@ -10980,12 +10980,12 @@ form .form {
   margin-right: 3.5rem;
   width: 250px;
 }
-form .form h2 {
-  color: #212529;
+form .form .login-header {
+  color: #dc3545 !important;
   font-family: cursive;
   margin-left: 50px;
-  padding-top: 30px;
-  font-size: 1.7em;
+  padding-top: 20px;
+  font-size: 1em;
 }
 form .form p {
   position: absolute;
