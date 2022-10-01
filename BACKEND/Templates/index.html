@@ -2,6 +2,7 @@
 {% extends 'base.html' %}
 {%block content%}
 {%load static%}
+{% static '../media/pictures' as baseUrl %}
     <section class="hero-index">
       <!-- making slides -->
       <div
@@ -88,17 +89,16 @@
         <h1 class=" p-4 text-center">PRODUCTS AND SERVICES</h1>
        
         <div class="row  g-5">
-          {%for data in Homeservice%}
+          {%for data in Introduction%}
           <div class="col-4">
-            <img src="{% static '../static/imagies/WEB.jpeg'%}" class="pic img-fluid" alt="">
+            <img src="{{data.Pictures.url}}" class="pic img-fluid" alt="">
             <div class="p-4 border  shadow bg-light">
               <div class="txt">
-                <h2>{{data}}</h2>
-                <p> {{data}}
-                </p class>
-                <p>Write your blog post</p>
+                <h2>{{data.Header}}</h2>
+                <p> {{data.Discription}}
                 <br />
-               <button type="button" class="btn btn-secondary home button">{{data}}</button>
+                <br />
+               <button type="button" class="btn btn-secondary home button">{{data.Buutton}}</button>
               </div>
             </div>
           </div>
