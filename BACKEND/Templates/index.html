@@ -33,35 +33,17 @@
           ></button>
         </div>
         <div class="carousel-inner">
+          {% for display in HomeCarousel %}
           <div class="carousel-item active" data-bs-interval="9000">
             <img src="{% static '../static/imagies/Data Center2.jpg'%}" class="d-block w-100" alt="..." />
             <div class="caption d-none d-md-block">
-              <h1 class="display-1">TELECOMMUNICATIONS</h1>
+              <h1 class="display-1">{{display.Header}}</h1>
               <p >
                 HOME OF TELECOMMUNICATIONS GOODS AND SERVICES
               </p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="9000">
-            <img src="{% static '../static/imagies/slide2-webdev.jpeg'%}" class="d-block w-100" alt="..." />
-            <div class="carousel-caption caption d-none d-md-block slide2">
-             
-              <p>
-                Home Of Fast And Realiabe <br>
-                Website Development
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="9000">
-            <img src="{% static '../static/imagies/slide-3.jpg'%}" class="d-block w-100" alt="..." />
-            <div class="caption d-none d-md-block">
-              <h1>PROJECT GUIDES</h1>
-              <p>
-                WE OFFER FAST AND RELIABLE HELP IN YOUR ENGENEERING PROJECT
-              </p>
-            </div>
-          </div>
-        </div>
+          {% endfor %}
         <button
           class="carousel-control-prev"
           type="button"

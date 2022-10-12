@@ -2,13 +2,15 @@ from django.shortcuts import render
 from .models import HomeCarousel, Introduction
 
 # Create your views here.
-Introduction = Introduction.objects.all() # creating a list of introductions
-
+ # creating a list of introductions and HomeCarousel
+Introduction = Introduction.objects.all()
+HomeCarousel = HomeCarousel.objects.all()
 
 def home(request):
     content ={}
     content={
-      'Introduction' :Introduction 
+      'Introduction' :Introduction ,
+      'HomeCarousel' : HomeCarousel
     }
     return render(request , 'index.html' , content)
 def about(request):
